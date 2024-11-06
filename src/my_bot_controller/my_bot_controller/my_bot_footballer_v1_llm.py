@@ -55,7 +55,7 @@ robotPrompt = f"""
 
 class mybotFootballerNode(Node):
     def __init__(self) -> None:
-        super().__init__("my_bot_footballer")
+        super().__init__("my_bot_footballer_1_llm")
         self.get_logger().info("My bot footballer node has been started")
         self.cmd_vel_pub_ = self.create_publisher(Twist, "/cmd_vel", 10)
         self.timer = self.create_timer(0.5, self.send_velocity_command)
